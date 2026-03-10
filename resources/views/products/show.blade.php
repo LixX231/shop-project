@@ -24,9 +24,10 @@
             <div class="border mb-4 flex">
                 <img class="w-28 h-full aspect-1 mr-4" src="{{Vite::asset($product->path_img)}}" alt="">
                 <div>
-                    <h3>{{$product->title}}</h3>
-                    <p>{{$product->description}}</p>
-                    <p>{{$product->price}}</p>
+                    <h3>Название: {{$product->title}}</h3>
+                    <p>Описание: {{$product->description}}</p>
+                    <p>Цена: {{$product->price}}</p>
+                    <p>Категория: {{$product->category->title}}</p>
                 </div>
             </div>
         </div>

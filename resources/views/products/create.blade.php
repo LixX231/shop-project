@@ -17,6 +17,11 @@
                 <input type="text" name="title" id="title" placeholder="Название продуктов" required><br>
                 <input type="number" name="price" id="price" placeholder="Цена продукта" required><br>
                 <textarea name="description" id="description" placeholder="Описание товара" required></textarea><br>
+                <select name="category_id" id="category_id">
+                    @foreach ($categories as $category)
+                        <option value="{{$category->id}}">{{$category->title}}</option>
+                    @endforeach
+                </select><br>
                 <input type="submit" value="Создать">
             </form>
         </div>
